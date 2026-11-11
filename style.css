@@ -364,7 +364,7 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   SERVICIOS - DYNAMIC 3D FLIP CARDS CON IMÁGENES Y SOPORTE MÓVIL (:active)
+   SERVICIOS - DYNAMIC 3D FLIP CARDS CON ORIENTACIÓN CORRECTA MÓVIL/DESKTOP
    ========================================================================== */
 .services-section {
   padding: 120px 0;
@@ -422,15 +422,15 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-md);
 }
 
-/* ROTACIÓN 3D: Se activa al pasar el cursor (Desktop) O al presionar con el dedo (Móvil con :active) */
+/* ROTACIÓN 3D: Se activa al pasar el cursor (Desktop) o al presionar con el dedo (Móvil con :active) */
 .flip-card:hover .flip-card-inner,
 .flip-card:active .flip-card-inner {
-  transform: rotateY(180deg) rotateX(3deg);
+  transform: rotateY(180deg);
 }
 
 /* AL RETIRAR EL CURSOR / DEDO: Regresa a 0 grados instantáneamente */
 .flip-card:not(:hover):not(:active) .flip-card-inner {
-  transform: rotateY(0deg) rotateX(0deg);
+  transform: rotateY(0deg);
 }
 
 .card-face {
@@ -441,6 +441,8 @@ h1, h2, h3, h4 {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  /* Corrección de renderizado y orientación para evitar texto invertido */
+  transform: rotateX(0deg) rotateY(0deg);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
   padding: 36px;
@@ -454,6 +456,7 @@ h1, h2, h3, h4 {
 .card-front {
   background: var(--surface-card);
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .front-bg-img {
@@ -541,12 +544,13 @@ h1, h2, h3, h4 {
   transform: translateX(4px);
 }
 
-/* CARA TRASERA CON IMAGEN OSCURECIDA Y TEXTO RESALTADO */
+/* CARA TRASERA CON ROTACIÓN DE 180º PARA VISUALIZACIÓN CORRECTA */
 .card-back {
   transform: rotateY(180deg);
   justify-content: center;
   border-color: var(--blue-accent);
   box-shadow: 0 20px 45px var(--blue-glow);
+  z-index: 1;
 }
 
 .back-image {
