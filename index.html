@@ -3,258 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS Consultores & Asociados | Servicios Contables y Asesoría Integral</title>
+    <title>DS Consultores & Asociados | Soluciones Contables y Financieras</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fuente Google Fonts (Inter) -->
+    <!-- Google Fonts (Plus Jakarta Sans y Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Encabezado / Navegación -->
+    <!-- Encabezado Estilo Minimalista -->
     <header class="header">
-        <div class="container navbar">
-            <a href="#" class="logo">
-                <span class="logo-accent">DS</span> Consultores & Asociados
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-dot"></span>DS Consultores
             </a>
-            <nav class="nav-links">
-                <a href="#inicio">Inicio</a>
+            <nav class="nav-menu">
                 <a href="#servicios">Servicios</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#contacto" class="btn-primary-sm">Contacto</a>
+                <a href="#enfoque">Enfoque</a>
+                <a href="#contacto" class="nav-cta">Contáctanos</a>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Principal (Hero con Imagen de Fondo) -->
-    <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <span class="badge">Gestión Contable, Tributaria y Financiera Integral</span>
-            <h1>Potenciamos el valor y la estabilidad de tu empresa</h1>
-            <p>En <strong>DS Consultores & Asociados</strong> transformamos tus números en decisiones estratégicas para garantizar el crecimiento sostenido y ordenado de tu negocio.</p>
-            <div class="hero-actions">
-                <a href="https://wa.me/51924103698?text=Hola,%20quisiera%20recibir%20información%20sobre%20sus%20servicios%20contables." target="_blank" class="btn-primary">Solicitar Asesoría</a>
-                <a href="#servicios" class="btn-secondary">Explorar Servicios</a>
+    <!-- Sección Hero Moderna (Asimétrica y Elegante) -->
+    <section class="hero-modern">
+        <div class="container hero-grid">
+            <div class="hero-text-side">
+                <span class="hero-tag">Consultoría Contable & Tributaria</span>
+                <h1>Estrategia financiera clara para empresas que exigen más</h1>
+                <p>Optimizamos tu carga fiscal y garantizamos el cumplimiento normativo ante la SUNAT con un enfoque preventivo y altamente especializado.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/51924103698?text=Hola,%20deseo%20una%20asesoría%20contable%20para%20mi%20empresa." target="_blank" class="btn-primary-modern">Conversar por WhatsApp</a>
+                    <a href="#servicios" class="btn-secondary-modern">Ver Soluciones</a>
+                </div>
+            </div>
+            <div class="hero-image-side">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80" alt="Reunión de estrategia financiera" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- Barra de Métricas Informativas -->
-    <section class="stats-banner">
-        <div class="container stats-grid">
-            <div class="stat-item">
-                <span class="stat-number">100%</span>
-                <span class="stat-text">Cumplimiento Tributario</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">24/7</span>
-                <span class="stat-text">Asesoría Preventiva</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">+10</span>
-                <span class="stat-text">Años de Experiencia</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">0</span>
-                <span class="stat-text">Riesgos e Inconsistencias</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Servicios con Tarjetas Giratorias Visuales (Flip 3D) -->
-    <section id="servicios" class="services">
+    <!-- Sección de Servicios (Diseño de Tarjetas Limpias con Iconos) -->
+    <section id="servicios" class="services-modern">
         <div class="container">
-            <div class="section-title">
-                <h2>Nuestros Servicios Especializados</h2>
-                <p>Pasa el cursor sobre cada tarjeta para revelar los detalles estratégicos de nuestras soluciones.</p>
+            <div class="section-header">
+                <h2>Áreas de Especialización</h2>
+                <p>Soluciones diseñadas a la medida de tu modelo de negocio.</p>
             </div>
             
-            <div class="services-grid">
-
-                <!-- Servicio 1 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-1">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">📊</div>
-                                <h3>Contabilidad General e Integral</h3>
-                                <p>Registro riguroso y control total de tus operaciones financieras.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-1">
-                            <div class="card-back-overlay">
-                                <h4>Contabilidad General e Integral</h4>
-                                <p>Elaboración de Libros Electrónicos (PLE/SIRE), emisión e interpretación de Estados Financieros (Balance General, P&L), arqueos e inventarios periódicos para una toma de decisiones informada.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="services-grid-modern">
+                <!-- Tarjeta 1 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">📊</div>
+                    <h3>Contabilidad Integral</h3>
+                    <p>Procesamiento automatizado de libros electrónicos (PLE/SIRE) y emisión oportuna de Estados Financieros.</p>
                 </div>
 
-                <!-- Servicio 2 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-2">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">⚖️</div>
-                                <h3>Planificación y Asesoría Tributaria</h3>
-                                <p>Blindaje fiscal y optimización eficiente de impuestos ante SUNAT.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-2">
-                            <div class="card-back-overlay">
-                                <h4>Planificación y Asesoría Tributaria</h4>
-                                <p>Declaraciones mensuales (PDT/621) y Anuales (Renta), cálculo eficiente de impuestos, atención en fiscalizaciones y fraccionamientos para proteger tu liquidez.</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Tarjeta 2 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">🛡️</div>
+                    <h3>Planeamiento Tributario</h3>
+                    <p>Estrategias legales de optimización fiscal para reducir la carga impositiva y evitar contingencias con SUNAT.</p>
                 </div>
 
-                <!-- Servicio 3 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-3">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">💼</div>
-                                <h3>Gestión de Planillas y Laboral</h3>
-                                <p>Administración exacta de nóminas, beneficios y PLAME.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-3">
-                            <div class="card-back-overlay">
-                                <h4>Gestión de Planillas y Laboral</h4>
-                                <p>Elaboración de nóminas, T-Registro, liquidaciones, cálculo de CTS, gratificaciones, vacaciones e implementación de regímenes especiales (MYPE / Régimen General).</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Tarjeta 3 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">👥</div>
+                    <h3>Gestión de Planillas</h3>
+                    <p>Administración completa de nóminas, cálculo de beneficios sociales, CTS, AFP y PLAME sin errores.</p>
                 </div>
 
-                <!-- Servicio 4 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-4">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">🚀</div>
-                                <h3>Constitución y Formalización</h3>
-                                <p>Acompañamiento integral para dar el salto empresarial.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-4">
-                            <div class="card-back-overlay">
-                                <h4>Constitución y Formalización</h4>
-                                <p>Asesoría en tipo societario (S.A.C., E.I.R.L., S.R.L.), reserva de nombre, elaboración de minuta, tramitación de RUC y activación de Clave SOL sin complicaciones.</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Tarjeta 4 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">🚀</div>
+                    <h3>Constitución de Empresas</h3>
+                    <p>Acompañamiento legal y tributario desde la reserva de nombre en SUNARP hasta la obtención de Clave SOL.</p>
                 </div>
 
-                <!-- Servicio 5 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-5">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">🔍</div>
-                                <h3>Auditoría y Diagnóstico Fiscal</h3>
-                                <p>Revisión preventiva para la eliminación de riesgos contables.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-5">
-                            <div class="card-back-overlay">
-                                <h4>Auditoría y Diagnóstico Fiscal</h4>
-                                <p>Auditoría de ejercicios anteriores, corrección de inconsistencias, reconstrucción contable y prevención de multas o reparos en fiscalizaciones SUNAT.</p>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Tarjeta 5 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">🔍</div>
+                    <h3>Auditoría Preventiva</h3>
+                    <p>Revisiones exhaustivas de periodos anteriores para corregir inconsistencias antes de una fiscalización.</p>
                 </div>
 
-                <!-- Servicio 6 -->
-                <div class="card-container">
-                    <div class="card-flip">
-                        <div class="card-front bg-card-6">
-                            <div class="card-front-overlay">
-                                <div class="badge-icon">📈</div>
-                                <h3>Consultoría Financiera y Costos</h3>
-                                <p>Control de márgenes, costos y proyecciones de caja.</p>
-                                <span class="flip-hint">Ver Detalle Oculto ➔</span>
-                            </div>
-                        </div>
-                        <div class="card-back bg-card-6">
-                            <div class="card-back-overlay">
-                                <h4>Consultoría Financiera y Costos</h4>
-                                <p>Estructuración de presupuestos, modelos de costos de producción/servicio, proyección de flujo de caja y análisis de ratios para maximizar márgenes de ganancia.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Nosotros (Con nueva imagen de análisis contable y financiero) -->
-    <section id="nosotros" class="about">
-        <div class="container about-grid">
-            <div class="about-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1000&q=80" alt="DS Consultores & Asociados - Análisis Financiero y Asesoría" class="about-img-main">
-                <div class="about-img-badge">
-                    <span>100%</span>
-                    <small>Compromiso Ético</small>
-                </div>
-            </div>
-            <div class="about-text">
-                <span class="subtitle">Misión & Respaldo</span>
-                <h2>Tranquilidad financiera respaldada por especialistas</h2>
-                <p>En <strong>DS Consultores & Asociados</strong> combinamos la ética profesional, el rigor técnico y la constante actualización normativa para ofrecerte un servicio de alta precisión.</p>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-icon">✔</div>
-                        <div>
-                            <h4>Respuesta Oportuna</h4>
-                            <p>Informes claros y atenciones rápidas para que no detengas tus decisiones.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">✔</div>
-                        <div>
-                            <h4>Planificación Legal</h4>
-                            <p>Aprovechamiento de incentivos y beneficios fiscales dentro del marco de la ley.</p>
-                        </div>
-                    </div>
+                <!-- Tarjeta 6 -->
+                <div class="service-card-clean">
+                    <div class="card-icon-box">📈</div>
+                    <h3>Costos y Finanzas</h3>
+                    <p>Diseño de estructuras de costos por procesos y análisis de flujos de caja proyectados.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pie de Página -->
-    <footer id="contacto" class="footer">
-        <div class="footer-bg-overlay"></div>
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>DS Consultores & Asociados</h3>
-                <p>Tu aliado estratégico en gestión contable, tributaria y financiera.</p>
+    <!-- Sección Enfoque / Diferencial (Imagen Dividida) -->
+    <section id="enfoque" class="split-section">
+        <div class="container split-grid">
+            <div class="split-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Equipo trabajando en análisis corporativo">
             </div>
-            <div class="footer-motto">
-                <blockquote>
-                    "El orden en las finanzas de hoy es el cimiento de la libertad y el éxito de mañana."
-                </blockquote>
+            <div class="split-content">
+                <span class="mini-tag">Nuestro Propósito</span>
+                <h2>Más que contadores, somos tus socios estratégicos de crecimiento</h2>
+                <p>Entendemos que cada número cuenta una historia. Por ello, transformamos datos complejos en indicadores comprensibles para que tomes decisiones con absoluta seguridad.</p>
+                <ul class="check-list">
+                    <li><span>✔</span> Rigurosidad técnica y actualización normativa constante.</li>
+                    <li><span>✔</span> Comunicación fluida y atención personalizada directos con socios.</li>
+                    <li><span>✔</span> Uso de tecnología moderna para una gestión sin papeles.</li>
+                </ul>
             </div>
         </div>
-        <div class="footer-bottom">
+    </section>
+
+    <!-- Pie de Página Minimalista -->
+    <footer id="contacto" class="footer-modern">
+        <div class="container footer-flex">
+            <div>
+                <h3>DS Consultores &amp; Asociados</h3>
+                <p>Excelencia y confianza en la gestión contable de tu empresa.</p>
+            </div>
+            <div class="footer-right">
+                <p>Lima, Perú</p>
+                <p>Contacto directo vía WhatsApp habilitado 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
             <div class="container">
-                <p>&copy; 2026 DS Consultores & Asociados. Todos los derechos reservados.</p>
+                <p>&copy; 2026 DS Consultores &amp; Asociados. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/51924103698?text=Hola,%20me%20interesa%20contratar%20sus%20servicios%20contables." class="whatsapp-btn" target="_blank" aria-label="Contacto vía WhatsApp">
-        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+    <!-- Botón Flotante Moderno de WhatsApp -->
+    <a href="https://wa.me/51924103698?text=Hola,%20deseo%20más%20información%20sobre%20sus%20servicios." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" class="wa-svg">
             <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.138-2.135c2.373 1.295 5.060 1.977 7.862 1.977 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.455 0-4.859-0.656-6.969-1.901l-0.5-0.297-5.181 1.359 1.383-5.148-0.328-0.522c-1.369-2.181-2.094-4.706-2.094-7.341 0-7.549 6.141-13.69 13.69-13.69s13.69 6.141 13.69 13.69-6.141 13.69-13.69 13.69zM22.516 19.309c-0.358-0.179-2.116-1.044-2.443-1.163s-0.566-0.179-0.804 0.179c-0.238 0.358-0.925 1.163-1.134 1.402s-0.418 0.269-0.776 0.090c-0.358-0.179-1.511-0.557-2.879-1.777-1.065-0.95-1.785-2.123-1.994-2.481s-0.022-0.552 0.157-0.73c0.161-0.161 0.358-0.418 0.537-0.627s0.238-0.358 0.358-0.597c0.119-0.238 0.060-0.448-0.030-0.627s-0.804-1.939-1.104-2.655c-0.292-0.698-0.591-0.603-0.804-0.614-0.208-0.011-0.448-0.013-0.686-0.013s-0.627 0.090-0.955 0.448c-0.328 0.358-1.253 1.224-1.253 2.984s1.283 3.461 1.462 3.699c0.179 0.238 2.525 3.856 6.118 5.408 0.855 0.369 1.523 0.59 2.044 0.755 0.859 0.273 1.641 0.235 2.259 0.143 0.69-0.103 2.116-0.865 2.414-1.701s0.298-1.552 0.209-1.701c-0.090-0.149-0.328-0.238-0.686-0.418z"></path>
         </svg>
     </a>
